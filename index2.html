@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ticotrekker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .cover {
+            background-image: url('./Galeria-11.jpg'); /* Replace 'path/to/your/cover-image.jpg' with the actual path to your cover image */
+            background-size: cover;
+            background-position: center;
+            height: 80vh; /* Adjust as needed */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .section {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+
+
+        /* Necessary CSS styles for the navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: rgba(255, 255, 255, 0.7); /* Adjust background color and transparency */
+}
+
+.second-container {
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: space-around;
+}
+.navbar .icons {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .icons a {
+    margin-right: 10px; /* Adjust spacing between icons and buttons */
+    color: #333; /* Adjust icon color */
+    font-size: 24px; /* Adjust icon size */
+    text-decoration: none;
+}
+
+.navbar .icons a:last-child {
+    margin-right: 20px; /* Larger spacing for the last item (language switcher) */
+}
+
+.navbar .book-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar .book-button:hover {
+    background-color: #45a049;
+}
+
+
+
+
+        @media only screen and (max-width: 768px) {
+            .navbar-hamburger {
+                display: block;
+            }
+            .navbar-icons {
+                display: none;
+            }
+        }
+
+
+        /* Necessary CSS styles */
+.rainforest-section {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.rainforest-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.rainforest-description {
+    font-size: 16px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+/* Necessary CSS styles */
+.amenities-list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.amenities-list li {
+    width: calc(25% - 20px); /* 25% width with spacing between columns */
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .amenities-list li {
+        width: calc(50% - 20px); /* 50% width with spacing between columns on smaller screens */
+    }
+}
+
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 768px) {
+    .amenities-list li {
+        flex-basis: 100%; /* Display items in a single column on mobile */
+        max-width: 100%;
+    }
+}
+
+
+.btn-read-more,
+.btn-view-rates {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin: 0 10px;
+}
+
+.btn-read-more:hover,
+.btn-view-rates:hover {
+    background-color: #45a049;
+}
+
+        /* Add more styles for other sections as needed */
+    </style>
+</head>
+<body>
+
+
+
+
+      <div class="navbar">
+        <div class="navbar-brand">Ticotrekker</div>
+
+        <div class="second-container">
+            <div class="navbar-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i></a>
+            </div>
+            <div>
+                <button class="navbar-button">Book Now</button>
+            </div>
+            <div class="navbar-language">English</div>
+            <div class="navbar-hamburger"><i class="fas fa-bars"></i></div>
+        </div>
+    </div>
+
+    <div class="cover">
+        <h1 style="color: black;">Welcome to Ticotrekker</h1>
+        <!-- Add any additional content for the cover section here -->
+    </div>
+
+
+
+<section class="rainforest-section">
+    <h2 class="rainforest-title">Costa Rican Rainforest</h2>
+    <p class="rainforest-description">
+        Through the heart of the Costa Rican rainforest winds a generous, one-of-a-kind thermal river. Every minute, 25,000 gallons of mineralized water flow through a spectacular riverbed that is cradled by lush jungle. The waters of this generous river always flow at over 100 degrees; it is water that emanates from geological veins, through the same magmatic bedrock that formed the iconic Arenal Volcano; one of the most active volcanoes in the Americas. This is truly a place unlike any other, and it was hidden from the eyes of outsiders for generations.
+    </p>
+    <a href="#" class="btn-read-more">Read more</a>
+
+<ul class="amenities-list">
+    <li>
+        <div class="amenity-item">
+            <div class="icon-wrapper">
+                <i class="fas fa-car"></i>
+            </div>
+            <div class="text-wrapper">
+                <p>Parking Lot: Free</p>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="amenity-item">
+            <div class="icon-wrapper">
+                <i class="fas fa-lock"></i>
+            </div>
+            <div class="text-wrapper">
+                <p>Free Lockers</p>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="amenity-item">
+            <div class="icon-wrapper">
+                <i class="fas fa-utensils"></i>
+            </div>
+            <div class="text-wrapper">
+                <p>Local Food & Beverage at Lower Cost</p>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="amenity-item">
+            <div class="icon-wrapper">
+                <i class="fas fa-tshirt"></i>
+            </div>
+            <div class="text-wrapper">
+                <p>Towel Rental</p>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="amenity-item">
+            <div class="icon-wrapper">
+                <i class="fas fa-swimming-pool"></i>
+            </div>
+            <div class="text-wrapper">
+                <p>Main pool with natural thermal spring water</p>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="amenity-item">
+            <div class="icon-wrapper">
+                <i class="fas fa-tree"></i>
+            </div>
+            <div class="text-wrapper">
+                <p>Natural Trails</p>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="amenity-item">
+            <div class="icon-wrapper">
+                <i class="fas fa-water"></i>
+            </div>
+            <div class="text-wrapper">
+                <p>Access to the Hot Spring River</p>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="amenity-item">
+            <div class="icon-wrapper">
+                <i class="fas fa-users"></i>
+            </div>
+            <div class="text-wrapper">
+                <p>Our Staff Ensures Order And Safety For The People In the Resort</p>
+            </div>
+        </div>
+    </li>
+</ul>
+
+
+    <p class="rainforest-description">
+        <strong>Hot Springs Day Pass</strong><br>
+        Discover a heavenly experience! Immerse yourself in the warm and comforting thermal waters. With our exclusive Day Pass, we invite you to delight in the benefits and therapeutic properties of these sacred waters. Relax, revitalize, and renew your body and mind in an unparalleled natural environment.
+    </p>
+    <a href="#" class="btn-view-rates">View Rates</a>
+    <p class="rainforest-description">
+        <strong>Hot Springs Day Pass with culinary feast</strong><br>
+        Experience pure bliss! Indulge in the tranquil embrace of soothing thermal waters. With our exclusive Day Pass plus a mealtime, you will have the opportunity to delight in the benefits and therapeutic properties of these sacred waters and at the same time savor a wide variety of exquisite dishes that capture the essence of Costa Rican gastronomy.
+    </p>
+    <a href="#" class="btn-view-rates">View Rates</a>
+</section>
+
+
+    <div class="section" id="gallery">
+        <h2>Gallery</h2>
+        <!-- Add your gallery content here -->
+    </div>
+
+    <div class="section" id="about">
+        <h2>About Us</h2>
+        <!-- Add your about us content here -->
+    </div>
+
+    <!-- Add more sections as needed -->
+
+    <script>
+        // Add your JavaScript code here, if necessary
+    </script>
+</body>
+</html>
+

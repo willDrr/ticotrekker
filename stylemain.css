@@ -1,0 +1,624 @@
+/*
+* {
+  outline: 1px solid red;
+}
+*/
+
+body {
+    margin: 0;
+}
+
+
+/* Add padding between sections */
+section {
+    margin: 20px 0; /* Adjust the top and bottom padding as needed */
+}
+
+p {
+    font-family: "Nunito Sans", Sans-serif;
+    font-weight: 200;
+}
+
+
+h1 {
+    color: rgb(247, 179, 41);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
+    font-family: "Questrial", Sans-serif;
+    font-weight: 800;
+    line-height: 40px;
+    font-size: 52px;
+    text-align: center;
+}
+
+h2 {
+    color: #FFFFFF;
+    font-family: "Questrial", Sans-serif;
+    font-size: 35px;
+    font-weight: 800;
+
+}
+
+h3 {
+    color: rgb(247, 179, 41);
+    font-family: "Questrial", Sans-serif;
+    font-weight: 800;
+    line-height: 40px;
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+
+    background-color: rgb(33, 37, 41, 0.5);
+
+    color: rgb(247, 179, 41);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menuhammobile {
+    visibility: hidden;
+}
+
+.logo {
+    /* Styles for the logo */
+    display: flex;
+}
+
+.nav-links {
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(247, 179, 41);
+    margin-left: 20px;
+}
+
+#buttonenviar {
+    width: 150px;
+    font-family: "Nunito Sans", Sans-serif;
+    font-weight: 400;
+    text-align: center;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: auto;
+}
+
+.hamburger-menu {
+    /* Styles for the hamburger menu icon */
+    /* display: none;  Hide by default */
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+    
+    .nav-links {
+        display: none; /* Hide nav links */
+    }
+
+    .menuhammobile {
+        visibility: visible;
+    }
+
+    .hamburger-menu {
+        display: block; /* Show hamburger menu icon */
+        background-color: transparent;
+        color: rgb(247, 179, 41);
+        padding: 10px;
+        text-decoration: none;
+    }
+}
+
+
+.cover-image {
+    background-image: url('./09/14.jpeg'); /* Replace 'path/to/your/image.jpg' with the path to your image */
+    background-size: cover;
+    background-position: center;
+    align-content: center;
+    height: 800px; /* Adjust the height as needed */
+    margin-top: -100px;
+    /*animation: crescendo 1.5s alternate infinite ease-in;*/
+}
+
+/*
+@keyframes crescendo {
+  100% {transform: scale(1.1);}
+}
+*/
+
+.text-presentation {
+    text-align: justify;
+    padding: 20px;
+}
+
+#childame {
+    flex: 1 0 21%; /* explanation below */
+    margin: 5px;
+    padding: 5px;
+    /*height: 100px;*/
+    text-align: center;
+    background-color: rgb(33, 48, 66);
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-rows: repeat(2, auto); /* 2 rows */
+    gap: 10px; /* Adjust as needed */
+    width: 100%
+}
+
+.grid-item-whatweare {
+    background-color: #f0f0f0;
+    /* padding: 20px;*/
+    text-align: center;
+    /*padding: 30px;*/
+    background-color: rgb(247, 179, 41);
+    text-align: justify;
+}
+
+#roundtripdivtext {
+    padding: 30px;
+}
+
+.grid-item {
+    background-color: #f0f0f0;
+    /* padding: 20px;*/
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(247, 179, 41);
+    text-align: justify;
+}
+
+
+.grid-item-img {
+    background-color: #f0f0f0;
+    /* padding: 20px;*/
+    text-align: center;
+    background-color: rgb(247, 179, 41);
+}
+
+.grid-item-img img {
+    max-width: 100%; /* Ensure images don't exceed the width of their container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 5 columns */
+    grid-template-rows: repeat(3, auto); /* 3 rows */
+    gap: 10px; /* Adjust as needed */
+}
+
+.gallery-item {
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+
+
+.gallery-item img {
+    width: 150px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.contact {
+    text-align: center;
+    background-color: #212529;
+    padding: 10px;
+    font-family: "Nunito Sans", Sans-serif;
+    font-weight: 200;
+}
+
+
+.contact ul {
+    list-style: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+.contact ul li {
+    display: inline-block; /* Display menu items horizontally */
+    padding: 2px;
+}
+
+.contact ul li a {
+    /* text-decoration: none; Remove underline */
+    color: white; /* Change link color to white */
+}
+
+
+.newsletter {
+    background-color: rgb(247, 179, 41);
+    padding: 10px;
+    text-align: center;
+}
+
+
+.footer {
+    background-color: #333; /* Example background color */
+    color: white; /* Example text color */
+    padding: 20px; /* Example padding */
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Adjust gap as needed */
+}
+
+.footer-grid div {
+    text-align: center;
+}
+
+.divicons {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+}
+
+
+.bottom-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.scroll-top-button {
+  background-color: rgb(247, 171, 41);
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px; /* Add margin between buttons */
+  text-align: center;
+  text-decoration: none;
+}
+
+.whatsapp-button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px; /* Add margin between buttons */
+  text-align: center;
+  text-decoration: none;
+}
+
+.whatsapp-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whatsapp-button i {
+  font-size: 20px;
+  /* margin-right: 5px;*/
+}
+
+/* Example of media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    /* Styles for screens smaller than 768px */
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); /* Single column layout for small screens */
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    /* Styles for screens smaller than 768px */
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr); /* Single column layout for small screens */
+    }
+}
+
+
+#buttonp {
+    font-family: "Nunito Sans", Sans-serif;
+    font-weight: 200;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#emailp {
+    font-family: "Nunito Sans", Sans-serif;
+    font-weight: 200;
+    width: 50%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#formsub button {
+    font-family: "Nunito Sans", Sans-serif;
+    font-weight: 400;
+}
+
+
+.custom-form {
+    display: flex;
+
+    font-family: "Nunito Sans", Sans-serif;
+    font-weight: 200;
+
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.custom-form > div {
+    padding: 10px;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+}
+
+.form-field {
+    flex: 1;
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.form-field input[type="date"],
+.form-field input[type="text"],
+.form-field input[type="number"],
+.form-field input[type="radio"],
+.form-field input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-field input[type="radio"] {
+    margin-right: 4px;
+}
+
+.form-field button[type="submit"] {
+    background-color: rgb(247, 179, 41);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+
+
+
+
+/* Apply flex direction column for small screens */
+@media screen and (max-width: 768px) {
+    h1 {
+        margin-top: 100px;
+        font-size: 30px;
+    }
+    /* Styles for screens smaller than 768px */
+    .coverimagediv {
+        grid-template-columns: repeat(1, 1fr); /* Single column layout for small screens */
+    }
+
+    .custom-form {
+        flex-direction: column;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    /* Adjust individual input widths */
+    .custom-form input[type="date"],
+    .custom-form input[type="text"],
+    .custom-form input[type="number"],
+    .custom-form input[type="radio"],
+    .custom-form input[type="submit"] {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 30px
+    }
+
+    .newsletterdiv {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .divicons .childame {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    #uno {
+        order: 1;
+    }
+
+    #dos {
+        order: 2;
+    }
+
+    #tres {
+        order: 4;
+    }
+
+    #cuatro {
+        order: 3;
+    }
+
+    #buttonenviar {
+        width: 100%;
+        font-family: "Nunito Sans", Sans-serif;
+        font-weight: 400;
+        padding: 8px;
+        box-sizing: border-box;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+}
+
+/* slide menu styles*/
+.slide-menu {
+    position: fixed;
+    top: 0;
+    right: -250px; /* Initially off-screen */
+    width: 250px;
+    height: 100%;
+    /*background-color: #333;*/
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #fcc603e8 0%, #fcc603a3 100%);
+    transition: right 0.3s ease;
+    z-index: 999;
+}
+
+.slide-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.slide-menu ul li {
+    padding: 10px;
+}
+
+.slide-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.slide-menu.active {
+    right: 0; /* Slide in from the right when active */
+}
+
+.slide-menu.inactive {
+    transition: right 0.3s ease;
+    right: -250px;
+}
+
+#closeBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+
+
+
+/* toggle switch container style */
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+}
+
+.toggle-label {
+    margin-right: 10px;
+}
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 34px;
+    transition: .4s;
+}
+
+.toggle-slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+input:checked + .toggle-slider {
+    background-color: #2196F3;
+}
+
+input:focus + .toggle-slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .toggle-slider:before {
+    transform: translateX(26px);
+}
+
+/* Keyframes for mobile view */
+@keyframes slideIn {
+    0% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+

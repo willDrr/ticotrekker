@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    /* Styles for the logo */
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 20px; /* Adjust as needed */
+}
+
+
+.cover-image-container {
+    /* Styles for your cover image container */
+}
+
+.main-content-container {
+    /* Styles for your main content container */
+}
+
+.gallery-container {
+    /* Styles for your gallery container */
+}
+
+.newsletter-container {
+    /* Styles for your newsletter container */
+}
+
+.contact-container {
+    /* Styles for your contact container */
+}
+
+footer {
+    /* Styles for your footer */
+}
+
