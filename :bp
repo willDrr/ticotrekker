@@ -1,0 +1,62 @@
+// i18n.js
+// https://www.i18next.com/overview/getting-started
+
+import enTranslation from './locales/en.json' with {type: 'json'};
+import esTranslation from './locales/es.json' with {type: 'json'};
+import formEsTranslation from './locales/formes.json' with {type: 'json'};
+import formEnTranslation from './locales/formen.json' with {type: 'json'};
+
+
+i18next
+  //.use(initReactI18next)
+  .init({
+    resources: {
+      en: {
+        translation: enTranslation,
+      },
+      es: {
+        translation: esTranslation,
+      },
+      formes: {
+        translation: formEsTranslation,
+      },
+      formen: {
+        translation: formEnTranslation,
+      },
+    },
+    lng: 'en',
+    fallbackLng: 'en',
+    interpolation: {
+      escapeValue: false, // react already safes from xss
+    },
+});
+
+// Language switching event listeners
+document.getElementById('english').addEventListener('click', () => {
+    changeLanguage('en')
+});
+
+// Language switching event listeners
+document.getElementById('spanish').addEventListener('click', () => {
+    changeLanguage('es')
+});
+
+// Function to change language
+function changeLanguage(lang) {
+  i18next.changeLanguage(lang);
+}
+
+// Function to update content on language change
+function updateContent() {
+  document.querySelector('[data-i18n="date"]').textContent = i18next.t('date');
+  document.querySelector('[data-i18n="adults"]').textContent = i18next.t('greeting');
+  document.querySelector('[data-i18n="kids"]').textContent = i18next.t('greeting');
+}
+
+// Listen for language change events
+i18next.on('languageChanged', () => {
+  updateContent();
+});
+
+// Initial content update
+updateContent();

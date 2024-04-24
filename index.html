@@ -54,14 +54,14 @@
                         <i class="fa-brands fa-square-whatsapp"></i>
                     </span></a>
 
-                <a href="#book"><span style="padding: 5px; background-color: rgb(247, 179, 41); color: white;">
-                        Book Shuttle
+                <a href="#book"><span data-i18n="bookshuttle" id="book-shuttle" style="padding: 5px; background-color: rgb(247, 179, 41); color: white;">
+                        Book
                     </span>
                 </a>
                 <span style="display: flex;">
-                    <a href="#" id="english" style="margin-right: 10px; text-decoration: none; color: rgb(247, 167, 41);" onmouseover="this.style.color='white'" onmouseout="this.style.color='rgb(247, 167, 41)'">EN<span style="color: rgb(33, 48, 66);">&nbsp;|&nbsp;</span></a>
-                    <a href="#" id="spanish" style="text-decoration: none; margin-left: -10px; color: rgb(247, 167, 41);" onmouseover="this.style.color='white'" onmouseout="this.style.color='rgb(247, 167, 41)'">ES</a>
-                </span> 
+                    <a href="#" id="spanish" style="margin-right: 10px; text-decoration: none; color: rgb(247, 167, 41);" onmouseover="this.style.color='white'" onmouseout="this.style.color='rgb(247, 167, 41)'">ES<span style="color: rgb(33, 48, 66);">&nbsp;|&nbsp;</span></a>
+                    <a href="#" id="english" style="text-decoration: none; margin-left: -10px; color: rgb(247, 167, 41);" onmouseover="this.style.color='white'" onmouseout="this.style.color='rgb(247, 167, 41)'">EN</a>
+                </span>
 
                 <div class="menuham">
                     <a href="#" class="hamburger-menu">☰</a>
@@ -76,10 +76,10 @@
             <button id="closeBtn">&times;</button>
 
             <ul>
-                <li><a href="#section3">Perks</a></li>
-                <li><a href="#section2">About us?</a></li>
-                <li><a href="#section6">Gallery</a></li>
-                <li><a href="#section8">Contact</a></li>
+                <li><a href="#section3" data-i18n="slideperks">Facilidades</a></li>
+                <li><a href="#section2" data-i18n="slideabout">Sobre nosotros?</a></li>
+                <li><a href="#section6" data-i18n="slidegallery">Galería</a></li>
+                <li><a href="#section8" data-i18n="slidecontact">Contacto</a></li>
             </ul>
         </div>
     </nav>
@@ -96,34 +96,34 @@
                 <div>
                     <div class="form-row" id="firstrow">
                         <div class="form-field">
-                            <label for="date">Seleccione una fecha:</label>
+                            <label data-i18n="date" for="date">Seleccione una fecha:</label>
                             <input type="date" id="date" name="date" required>
                         </div>
 
                         <div class="form-field">
-                            <label for="pickup">Dónde recoger:</label>
+                            <label data-i18n="pickup" for="pickup">Dónde recoger:</label>
                             <input type="text" id="pickup" name="pickup" required>
                         </div>
 
                         <div class="form-field">
-                            <label for="dropoff">Dónde dejar:</label>
+                            <label data-i18n="dropoff" for="dropoff">Dónde dejar:</label>
                             <input type="text" id="dropoff" name="dropoff" required>
                         </div>
                     </div>
 
                     <div class="form-row" id="secondrow">
                         <div class="form-field">
-                            <label for="adults">Adultos:</label>
+                            <label data-i18n="adults" for="adults">Adultos:</label>
                             <input type="number" id="adults" name="adults" min="1" required>
                         </div>
 
                         <div class="form-field">
-                            <label for="children">Niños:</label>
+                            <label data-i18n="kids" for="children">Niños:</label>
                             <input type="number" id="children" name="children" min="0" required>
                         </div>
 
                         <div class="toggle-container">
-                            <label for="roundTrip" class="toggle-label">Ida-vuelta:</label>
+                            <label data-i18n="roundtrip" for="roundTrip" class="toggle-label">Ida-vuelta:</label>
                             <div class="toggle-switch">
                                 <input type="checkbox" id="roundTrip" name="roundTrip" value="yes" required="">
                                 <label for="roundTrip" class="toggle-slider"></label>
@@ -131,12 +131,12 @@
                         </div>
 
                         <div class="form-field">
-                            <label for="contact">Deje su contacto:</label>
+                            <label data-i18n="contact" for="contact">Deje su contacto:</label>
                             <input type="text" id="contact" name="contact">
                         </div>
 
                         <div class="form-row">
-                            <button type="submit" id="buttonenviar" name="submit">Enviar</button>
+                            <button data-i18n="send" type="submit" id="buttonenviar" name="submit">Enviar</button>
                         </div>
                     </div>
                 </div>
@@ -148,7 +148,7 @@
     <section class="text-presentation" id="section2">
         <div>
             <div>
-                <p id="ptextp">
+                <p data-i18n="textpresentation" id="ptextp">
                     Bienvenidos a Ticotrekker una empresa de transporte de turismo en Costa Rica! Nos enorgullece ofrecerle los mejores conductores y excelentes busetas para garantizarle una experiencia de viaje segura, cómoda y memorable. Con nuestra flota moderna y bien mantenida, estamos listos para llevarlo a explorar los maravillosos destinos turísticos de Costa Rica. Desde las playas vírgenes hasta las exuberantes selvas tropicales, estamos aquí para hacer que su viaje sea inolvidable. ¡Reserve con nosotros y descubra la belleza de Costa Rica con comodidad y estilo.
                 </p>
             </div>
@@ -160,7 +160,7 @@
     <section class="main-content" id="section3">
         <!-- Main content goes here -->
         <div class="containericons">
-            <h3 style="text-align: center;color: rgb(247,191,47);">Nuestro servicio</h3>
+            <h3 data-i18n="ourservice" style="text-align: center;color: rgb(247,191,47);">Nuestro Servicio</h3>
 
             <div class="divicons">
                 <div id="childame">
@@ -171,7 +171,7 @@
 
                 <div id="childame">
                     <img src="./blog.svg" />
-                    <p>Bilingual drivers
+                    <p data-i18n="bdrivers" >Choferes Bilingües
                         <p />
                 </div>
 
@@ -183,13 +183,13 @@
 
                 <div id="childame">
                     <img src="./blog.svg" />
-                    <p>Convinience stops
+                    <p data-i18n="conviniencestops">Paradas a conveniencia
                         <p />
                 </div>
 
                 <div id="childame">
                     <img src="./blog.svg" />
-                    <p>ICT certified
+                    <p data-i18n="ict">Certificación ICT
                         <p />
                 </div>
 
@@ -201,13 +201,13 @@
 
                 <div id="childame">
                     <img src="./blog.svg" />
-                    <p>All payments
+                    <p data-i18n="allpayments">Todos los pagos válidos
                         <p />
                 </div>
 
                 <div id="childame">
                     <img src="./blog.svg" />
-                    <p>Trustworthy
+                    <p data-i18n="allcountry">Todo el país
                         <p />
                 </div>
             </div>
@@ -218,34 +218,34 @@
         <div class="grid-container">
             <div class="grid-item-img" id="uno"><img src="./09/7.jpeg" alt="Image 1"></div>
             <div class="grid-item" id="dos">
-                <p>
-                    Shuttle Day Pass
+                <p data-i18n="shuttledaypass">
+                    Traslado de un día
                     <hr />
                     <p />
 
-                <p>
+                <p data-i18n="textshuttledaypass">
                 Con nosotros podes trasladarte por Costa Rica de forma cómoda y segura con el transporte privado le dedicamos el máximo tiempo a nuestro cliente tomando en cuenta los puntos durante el camino para toma de fotografías, tomar un desayuno, almuerzo y / o cena.
                     <p />
 
                     <p />
                     <hr />
-                    <a id="firelink">Ver Tarifas</a> 
+                    <a data-i18n="seerates" id="firelink">Ver Tarifas</a> 
                     <hr />
                     <p />
             </div>
             <div class="grid-item" id="tres">
-                <p>
-                    Shuttle Day Pass (Round-Trip)
+                <p data-i18n="shuttledaypassroundtrip">
+                    Traslados de un día(Ida-Vuelta)
                     <hr />
                     <p />
 
-                <p>
+                <p data-i18n="textshuttledaypassroundtrip">
                 Te ayudamos a coordinar entradas y transportes para que la pasen bien en nuestro pueblo La Fortuna, mítico por su espectacular vista del volcán Arenal, exuberantes bosques llenos de cataratas y vida silvestre . Además no olvides que es un destino lleno de adrenalina en donde puedes encontrar zip-line, rafting, rappelling y mucho más. Podemos coordinar lo que tengas en mente hacer y te daremos los mejores tips para que disfrutes al máximo.
                     <p />
 
                     <p />
                     <hr />
-                    <span style="text-align: center">Ver Tarifas</span>
+                    <span data-i18n="seerates" style="text-align: center">Ver Tarifas</span>
                     <hr />
                     <p />
 
@@ -264,18 +264,18 @@
 
 
             <div class="grid-item-whatweare" id="roundtripdivtext">
-                <p>
-                    Shuttle Day Pass (Round-Trip)
+                <p data-i18n="privateshuttle">
+                    Transporte privado y tours
                     <hr />
                     <p />
 
-                <p>
+                <p data-i18n="textprivateshuttle">
                 Ticotrekker les ofrece diferentes Tours durante su traslado de Punto A punto B, consulte con nosotros que podes hacer para aprovechar el máximo tiempo y no desperdicies un hermoso día únicamente viajando.
                     <p />
 
                     <p />
                     <hr />
-                    Ver Tarifas 
+                    <span data-i18n="seerates" style="text-align: center">Ver Tarifas</span>
                     <hr />
                     <p />
 
@@ -312,18 +312,18 @@
         <!-- Newsletter content goes here -->
         <div class="newsletterdiv">
             <div>
-                <h2>Ticotrekker Offers and Updates</h2>
+                <h2 data-i18n="offers">Ticotrekker Ofertas y Actualizaciones</h2>
             </div>
             <div>
                 <span></span>
             </div>
             <div>
-                <p>Subscribe to our monthly newsletter for the latest offers, ideas and inspiration.</p>
+                <p data-i18n="textoffers">Subscríbete a nuestro boletín mensual para recibir las últimas ofertas, ideas e inspiración.</p>
             </div>
             <div>
                 <form id="formsub">
                     <input type="email" id="emailp" placeholder="Email" required>
-                    <button type="submit" id="buttonp" >Subscribe me!</button>
+                    <button type="submit" id="buttonp" data-i18n="subscribe">Suscribirse!</button>
                 </form>
             </div>
         </div>
@@ -345,11 +345,11 @@
             <div>
                 <nav>
                     <ul>
-                        <li><a href="#section2">About us</a></li>
-                        <li><a href="#section3">Perks</a></li>
-                        <li><a href="./menu-Bar-Pura-Vida-ing.pdf" target="_blank">Shuttles</a></li>
-                        <li><a href="#section6">Gallery</a></li>
-                        <li><a href="#section8">Contact Us</a></li>
+                        <li><a href="#section2" data-i18n="about">Acerca de nosotros</a></li>
+                        <li><a href="#section3" data-i18n="perks">Facilidades</a></li>
+                        <li><a href="./dummy.pdf" target="_blank" data-i18n="pdf">Traslados</a></li>
+                        <li><a href="#section6" data-i18n="gallery">Galería</li>
+                        <li><a href="#section8" data-i18n="contactus">Contáctanos</a></li>
                     </ul>
                 </nav>
             </div>
@@ -358,8 +358,8 @@
                     <li><a href="tel:+50644444444"><i class="fas fa-phone-volume">&nbsp</i>+506 4444 4444</a></li>
                     <li><a href="mailto:reservas@ticotrekker.com"><i
                                 class="fas fa-envelope">&nbsp</i>reservas@ticotrekker.com</a></li>
-                    <li><a href="https://www.google.com/maps/place/Provincia+de+Alajuela,+La+Fortuna" target="_blank"><i
-                                class="fas fa-map-marker-alt">&nbsp</i>Located in La Fortuna de San Carlos.</a></li>
+                    <li><a href="https://www.google.com/maps/place/Provincia+de+Alajuela,+La+Fortuna" data-i18n="locatedin" target="_blank"><i
+                                class="fas fa-map-marker-alt">&nbsp</i>Ubicados en La Fortuna de San Carlos.</a></li>
                 </ul>
             </div>
         </div>
@@ -374,13 +374,13 @@
         <!-- Footer content goes here -->
         <div class="footer-grid">
             <div>
-                <p>Cancellation Policy | Privacy Policy</p>
+                <p><span data-i18n="policy">Política de Cancelación</span> | <span data-i18n="privacy">Política de Privacidad</span></p>
             </div>
             <div>
-                <p>All Rights Reserved | Ticotrekker | La Fortuna S.C</p>
+                <p><span data-i18n="allrights">Derechos Reservados</span> | <span>Ticotrekker</span></p>
             </div>
             <div>
-                <p>ICT | All payments Valid | None</p>
+                <p><span>ICT</span> | <span data-i18n="allpaymentsvalid">Todos los pagos válidos</span></p>
             </div>
         </div>
     </footer>
@@ -400,6 +400,7 @@
         //})
     </script>
     <script src="script.js"></script>
+    <script type="module" src="i18n.js"></script>
 
     <script type="module">
         import PhotoSwipeLightbox from './photoswipe-lightbox.esm.min.js';

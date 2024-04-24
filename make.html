@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>i18next Example</title>
+    <!-- Include i18next library -->
+    <script src="https://unpkg.com/i18next@23.11.2/dist/umd/i18next.js"></script>
+</head>
+<body>
+
+<div>
+    <button onclick="changeLanguage('en')">English</button>
+    <button onclick="changeLanguage('es')">Spanish</button>
+</div>
+
+<div>
+    <p id="greeting"></p>
+</div>
+
+<script>
+    // Load translations from external JSON files
+    function loadTranslations() {
+        fetch('en.json')
+            .then(response => response.json())
+            .then(enTranslations => {
+                i18next.addResourceBundle('en', 'translation', enTranslations);
+                return fetch('es.json');
+            })
+            .then(response => response.json())
+            .then(esTranslations => {
+                i18next.addResourceBundle('es', 'translation', esTranslations);
+                translate(); // Initial translation
+            })
+            .catch(error => console.error('Error loading translations:', error));
+    }
+
+    // Initialize i18next and load translations
+    i18next.init({
+        lng: 'en',
+        debug: true,
+        resources: {
+            en: {
+                translation: {}
+            },
+            es: {
+                translation: {}
+            }
+        }
+    });
+    loadTranslations();
+
+    // Function to change language
+    function changeLanguage(language) {
+        i18next.changeLanguage(language, translate); // Re-translate after changing language
+    }
+
+    // Translate elements
+    function translate() {
+        const greetingElement = document.getElementById('greeting');
+        greetingElement.textContent = i18next.t('greeting');
+    }
+</script>
+
+
+</body>
+</html>
+
