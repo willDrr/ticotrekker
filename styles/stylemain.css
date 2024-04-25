@@ -122,7 +122,7 @@ h3 {
 
 
 .cover-image {
-    background-image: url('./09/14.jpeg'); /* Replace 'path/to/your/image.jpg' with the path to your image */
+    background-image: url('../09/14.jpeg'); /* Replace 'path/to/your/image.jpg' with the path to your image */
     background-size: cover;
     background-position: center;
     align-content: center;
@@ -347,6 +347,10 @@ h3 {
     font-size: 16px;
 }
 
+#langswitch {
+    visibility: hidden;
+}
+
 #emailp {
     font-family: "Nunito Sans", Sans-serif;
     font-weight: 200;
@@ -506,6 +510,10 @@ h3 {
         border-radius: 4px;
         font-size: 16px;
     }
+
+    #langswitch {
+        visibility: visible;
+    }
 }
 
 /* slide menu styles*/
@@ -609,7 +617,8 @@ h3 {
 }
 
 input:checked + .toggle-slider {
-    background-color: #2196F3;
+    /*background-color: #2196F3;*/
+    background-color: rgb(247, 179, 41);
 }
 
 input:focus + .toggle-slider {

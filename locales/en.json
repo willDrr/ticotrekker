@@ -1,9 +1,9 @@
  {
     "dateform": "Select a date",
-    "pickup": "Where to pick-up",
-    "dropoff": "Where to drop-off",
+    "pickup": "Pick-up",
+    "dropoff": "Drop-off",
     "adults": "Adults",
-    "kids": "Child",
+    "kids": "Children",
     "roundtrip": "Round-Trip",
     "contact": "Leave your contact",
     "send": "Send",

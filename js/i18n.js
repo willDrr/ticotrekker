@@ -1,7 +1,7 @@
-import enTranslation from './locales/en.json' with {type: 'json'};
-import esTranslation from './locales/es.json' with {type: 'json'};
-import formEsTranslation from './locales/formes.json' with {type: 'json'};
-import formEnTranslation from './locales/formen.json' with {type: 'json'};
+import enTranslation from '../locales/en.json' with {type: 'json'};
+import esTranslation from '../locales/es.json' with {type: 'json'};
+import formEsTranslation from '../locales/formes.json' with {type: 'json'};
+import formEnTranslation from '../locales/formen.json' with {type: 'json'};
 
 i18next
   // .use(initReactI18next)
@@ -35,8 +35,17 @@ document.getElementById('english').addEventListener('click', () => {
     changeLanguage('en')
 });
 
+document.getElementById('englishmob').addEventListener('click', () => {
+    changeLanguage('en')
+});
+
+
 // Language switching event listeners
 document.getElementById('spanish').addEventListener('click', () => {
+    changeLanguage('es')
+});
+
+document.getElementById('spanishmob').addEventListener('click', () => {
     changeLanguage('es')
 });
 
