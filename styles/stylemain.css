@@ -167,6 +167,12 @@ h3 {
 .hamburger-menu {
 }
 
+.div4mob {
+    display: flex;
+    gap: 10px;
+}
+
+
 @media (max-width: 768px) {
     
     .nav-links {
@@ -460,6 +466,11 @@ h3 {
     flex-grow: inherit;
 }
 
+#secondrow > div:nth-child(3) {
+    flex-grow: inherit;
+}
+
+
 .form-field input[type="date"],
 .form-field input[type="text"],
 .form-field input[type="number"],
@@ -482,6 +493,7 @@ h3 {
     color: #fff;
     padding: 10px;
     border: none;
+    flex-grow: inherit;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
@@ -496,6 +508,7 @@ h3 {
         margin-top: 100px;
         font-size: 30px;
     }
+
 
     #spanmobile {
         display: contents;
@@ -584,6 +597,11 @@ h3 {
         height: 0px;
         width: 100%;
         display: contents;
+    }
+
+    .div4mob {
+      display: flex;
+      gap: 10px;
     }
 }
 
