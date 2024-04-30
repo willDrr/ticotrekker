@@ -30,6 +30,28 @@ h1 {
     text-align: center;
 }
 
+.margin-top-negative {
+    text-align: center;
+    margin-top: -30px;
+}
+
+#spanmobile {
+    visibility: hidden;
+    display: none;
+}
+
+#spantitle {
+    color: rgb(247, 179, 41);
+    font-size: 36pt;
+}
+
+#spandesk {
+    color: #fff;
+    font-size: 18pt;
+}
+
+
+
 h2 {
     color: #FFFFFF;
     font-family: "Questrial", Sans-serif;
@@ -76,6 +98,52 @@ h3 {
     margin-left: auto;
 }
 
+.tablinks {
+    color: white;
+    font-family: "Nunito Sans", Sans-serif;
+    font-weight: 200px;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  background-color: transparent;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  background-color: rgb(247, 171, 49);
+  border-top-left-radius: 10px; /* Adjust the border radius for the top-left corner */
+  border-top-right-radius: 10px; /* Adjust the border radius for the top-right corner */
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #fff;
+  color: rgb(247, 171, 49);
+  font-weight: 400;
+}
+
+#divinnerform{
+    margin: 0px 40px 0px 40px;
+}
+
+.tabcontent {
+  display: visible;
+  border-top: none;
+  background-color: rgb(247, 171, 49);
+  height: 0px;
+}
 .nav-links a {
     text-decoration: none;
     color: rgb(247, 179, 41);
@@ -86,6 +154,7 @@ h3 {
     width: 150px;
     font-family: "Nunito Sans", Sans-serif;
     font-weight: 400;
+    background-color: rgb(33, 48, 66);
     text-align: center;
     padding: 8px;
     box-sizing: border-box;
@@ -96,11 +165,8 @@ h3 {
 }
 
 .hamburger-menu {
-    /* Styles for the hamburger menu icon */
-    /* display: none;  Hide by default */
 }
 
-/* Media query for responsive design */
 @media (max-width: 768px) {
     
     .nav-links {
@@ -109,6 +175,7 @@ h3 {
 
     .menuhammobile {
         visibility: visible;
+        margin-right: -200px;
     }
 
     .hamburger-menu {
@@ -122,14 +189,17 @@ h3 {
 
 
 .cover-image {
-    background-image: url('../09/14.jpeg'); /* Replace 'path/to/your/image.jpg' with the path to your image */
-    background-size: cover;
+	/*background-size: cover;*/
     background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 830px;
     align-content: center;
-    height: 800px; /* Adjust the height as needed */
+    height: 450px;
     margin-top: -100px;
-    /*animation: crescendo 1.5s alternate infinite ease-in;*/
+    background-image: url(../09/disenosintitulo.png);
 }
+
 
 /*
 @keyframes crescendo {
@@ -146,7 +216,6 @@ h3 {
     flex: 1 0 21%; /* explanation below */
     margin: 5px;
     padding: 5px;
-    /*height: 100px;*/
     text-align: center;
     background-color: rgb(33, 48, 66);
 }
@@ -162,9 +231,7 @@ h3 {
 
 .grid-item-whatweare {
     background-color: #f0f0f0;
-    /* padding: 20px;*/
     text-align: center;
-    /*padding: 30px;*/
     background-color: rgb(247, 179, 41);
     text-align: justify;
 }
@@ -175,7 +242,6 @@ h3 {
 
 .grid-item {
     background-color: #f0f0f0;
-    /* padding: 20px;*/
     text-align: center;
     padding: 30px;
     background-color: rgb(247, 179, 41);
@@ -185,18 +251,14 @@ h3 {
 
 .grid-item-img {
     background-color: #f0f0f0;
-    /* padding: 20px;*/
     text-align: center;
     background-color: rgb(247, 179, 41);
 }
 
 .grid-item-img img {
     max-width: 100%; /* Ensure images don't exceed the width of their container */
-    /*height: auto;  Maintain aspect ratio */
     height: 100%;
 }
-
-
 
 
 .gallery {
@@ -214,7 +276,6 @@ h3 {
 
 
 .gallery-item img {
-    /*width: 150px;*/
     width: 100%;
     height: 100%;
     aspect-ratio: 1/1;
@@ -242,7 +303,6 @@ h3 {
 }
 
 .contact ul li a {
-    /* text-decoration: none; Remove underline */
     color: white; /* Change link color to white */
 }
 
@@ -317,12 +377,9 @@ h3 {
 
 .whatsapp-button i {
   font-size: 20px;
-  /* margin-right: 5px;*/
 }
 
-/* Example of media queries for responsiveness */
 @media screen and (max-width: 768px) {
-    /* Styles for screens smaller than 768px */
     .gallery {
         grid-template-columns: repeat(2, 1fr); /* Single column layout for small screens */
     }
@@ -330,7 +387,6 @@ h3 {
 
 
 @media screen and (max-width: 768px) {
-    /* Styles for screens smaller than 768px */
     .grid-container {
         grid-template-columns: repeat(1, 1fr); /* Single column layout for small screens */
     }
@@ -369,17 +425,11 @@ h3 {
 
 
 .custom-form {
-    display: flex;
-
     font-family: "Nunito Sans", Sans-serif;
     font-weight: 200;
-
     flex-direction: column;
     align-items: center;
-    background-color: #fff;
-    border-radius: 8px;
-    margin: 10px;
-    padding: 10px;
+    background-color: rgb(247, 179, 41);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -395,13 +445,19 @@ h3 {
 }
 
 .form-field {
+    align-content: end;
     flex: 1;
 }
 
 .form-field label {
     display: block;
     margin-bottom: 8px;
-    color: #555;
+    color: white;
+    font-weight: 400;
+}
+
+#secondrow > div:nth-child(5){
+    flex-grow: inherit;
 }
 
 .form-field input[type="date"],
@@ -434,15 +490,27 @@ h3 {
 
 
 
-
-
-/* Apply flex direction column for small screens */
 @media screen and (max-width: 768px) {
+
     h1 {
         margin-top: 100px;
         font-size: 30px;
     }
-    /* Styles for screens smaller than 768px */
+
+    #spanmobile {
+        display: contents;
+        visibility: visible;
+        color: white;
+        font-weight: 400;
+        font-size: 8pt;
+        position: absolute;
+    }
+
+    #spandesk {
+        display: none;
+    }
+
+
     .coverimagediv {
         grid-template-columns: repeat(1, 1fr); /* Single column layout for small screens */
     }
@@ -455,7 +523,6 @@ h3 {
         flex-direction: column;
     }
 
-    /* Adjust individual input widths */
     .custom-form input[type="date"],
     .custom-form input[type="text"],
     .custom-form input[type="number"],
@@ -464,9 +531,6 @@ h3 {
         width: 100%;
     }
 
-    h1 {
-        font-size: 30px
-    }
 
     .newsletterdiv {
         display: flex;
@@ -514,16 +578,21 @@ h3 {
     #langswitch {
         visibility: visible;
     }
+
+    .tabcontent {
+        position: absolute;
+        height: 0px;
+        width: 100%;
+        display: contents;
+    }
 }
 
-/* slide menu styles*/
 .slide-menu {
     position: fixed;
     top: 0;
     right: -250px; /* Initially off-screen */
     width: 250px;
     height: 100%;
-    /*background-color: #333;*/
     background-color: transparent;
     background-image: linear-gradient(180deg, #fcc603e8 0%, #fcc603a3 100%);
     transition: right 0.3s ease;
@@ -564,19 +633,20 @@ h3 {
     color: #fff;
 }
 
-
-
-
+#labelrt {
+    margin-bottom: 0px;
+}
 
 /* toggle switch container style */
-
 .toggle-container {
-    display: flex;
-    align-items: center;
+    flex: none;
 }
 
 .toggle-label {
     margin-right: 10px;
+    font-weight: 400;
+    color: white;
+    font-family: "Nunito Sans", Sans-serif;
 }
 
 .toggle-switch {
@@ -601,7 +671,7 @@ h3 {
     bottom: 0;
     background-color: #ccc;
     border-radius: 34px;
-    transition: .4s;
+    /*transition: .4s;*/
 }
 
 .toggle-slider:before {
@@ -613,12 +683,11 @@ h3 {
     bottom: 4px;
     background-color: white;
     border-radius: 50%;
-    transition: .4s;
+    /*transition: .4s;*/
 }
 
 input:checked + .toggle-slider {
-    /*background-color: #2196F3;*/
-    background-color: rgb(247, 179, 41);
+    background-color: rgb(33, 48, 66);
 }
 
 input:focus + .toggle-slider {

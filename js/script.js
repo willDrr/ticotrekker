@@ -33,6 +33,25 @@ function make() {
     });
 }
 
+function openCity(evt, cityName) {
+  let i, tabcontent, tablinks;
+
+  tabcontent = document.getElementsByClassName("tabcontent");
+    console.log(tabcontent.length);
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.visibility = "hidden";
+    //tabcontent[i].style.display = "none";
+  }
+
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  document.getElementById(cityName).style.visibility = "visible";
+  //document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
 
 document.addEventListener('DOMContentLoaded', function() {
     var hamburgermenus = document.querySelectorAll('.hamburger-menu');

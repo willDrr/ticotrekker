@@ -112,6 +112,13 @@ function updateContent() {
     document.querySelector('[data-i18n="privacy"]').textContent = i18next.t('privacy');
     document.querySelector('[data-i18n="allrights"]').textContent = i18next.t('allrights');
     document.querySelector('[data-i18n="allpaymentsvalid"]').textContent = i18next.t('allpaymentsvalid');
+
+    document.querySelector('[data-i18n="spandesk"]').textContent = i18next.t('slogandesk');
+    document.querySelector('[data-i18n="spanmobile"]').textContent = i18next.t('sloganmobile');
+
+
+    document.querySelector('[data-i18n="form1"]').textContent = i18next.t('form1');
+    document.querySelector('[data-i18n="form2"]').textContent = i18next.t('form2');
 }
 
 // Listen for language change events

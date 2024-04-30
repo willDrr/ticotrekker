@@ -40,17 +40,17 @@
             <div class="nav-links">
                 <!--<a href="#social-media">Social Media</a>-->
 
-                <a href="#instagram.com"><span>
+                <a href="https://www.facebook.com/profile.php?id=100090308007358"><span>
                         <i class="fa-brands fa-facebook"></i>
                     </span></a>
 
 
-                <a href="#facebook.com"><span>
+                <a href="https://www.instagram.com/ticotrekker"><span>
                         <i class="fa-brands fa-square-instagram"></i>
                     </span></a>
                 
 
-                <a href="#whatsapp.com"><span>
+                <a href="https://wa.me/50683383002"><span>
                         <i class="fa-brands fa-square-whatsapp"></i>
                     </span></a>
 
@@ -63,8 +63,8 @@
 
 
                 <span style="display: flex;">
-                    <a href="#" id="spanish" style="margin-right: 10px; text-decoration: none; color: rgb(247, 167, 41);" onmouseover="this.style.color='white'" onmouseout="this.style.color='rgb(247, 167, 41)'">ES<span style="color: rgb(33, 48, 66);">&nbsp;|&nbsp;</span></a>
-                    <a href="#" id="english" style="text-decoration: none; margin-left: -10px; color: rgb(247, 167, 41);" onmouseover="this.style.color='white'" onmouseout="this.style.color='rgb(247, 167, 41)'">EN</a>
+                    <a href="#es" id="spanish" style="margin-right: 10px; text-decoration: none; color: rgb(247, 167, 41);" onmouseover="this.style.color='white'" onmouseout="this.style.color='rgb(247, 167, 41)'">ES<span style="color: rgb(33, 48, 66);">&nbsp;|&nbsp;</span></a>
+                    <a href="#en" id="english" style="text-decoration: none; margin-left: -10px; color: rgb(247, 167, 41);" onmouseover="this.style.color='white'" onmouseout="this.style.color='rgb(247, 167, 41)'">EN</a>
                 </span>
 
                 <div class="menuham">
@@ -80,16 +80,16 @@
             <button id="closeBtn">&times;</button>
 
             <ul>
-                <li><a href="#section3" data-i18n="slideperks">Facilidades</a></li>
-                <li><a href="#section2" data-i18n="slideabout">Sobre nosotros?</a></li>
-                <li><a href="#section6" data-i18n="slidegallery">Galería</a></li>
-                <li><a href="#section8" data-i18n="slidecontact">Contacto</a></li>
+                <li><a href="#facilidades" data-i18n="slideperks">Facilidades</a></li>
+                <li><a href="#sobre-nosotros" data-i18n="slideabout">Sobre nosotros?</a></li>
+                <li><a href="#galeria" data-i18n="slidegallery">Galería</a></li>
+                <li><a href="#contacto" data-i18n="slidecontact">Contacto</a></li>
             </ul>
         </div>
 
         <span id="langswitch">
-            <a href="#" id="spanishmob" style="margin-right: 10px; text-decoration: none; color: rgb(247, 167, 41);" onmouseover="this.style.color='white'" onmouseout="this.style.color='rgb(247, 167, 41)'">ES<span style="color: rgb(33, 48, 66);">&nbsp;|&nbsp;</span></a>
-            <a href="#" id="englishmob" style="text-decoration: none; margin-left: -12px; color: rgb(247, 167, 41);" onmouseover="this.style.color='white'" onmouseout="this.style.color='rgb(247, 167, 41)'">EN</a>
+            <a href="#es" id="spanishmob" style="margin-right: 10px; text-decoration: none; color: rgb(247, 167, 41);" onmouseover="this.style.color='white'" onmouseout="this.style.color='rgb(247, 167, 41)'">ES<span style="color: rgb(33, 48, 66);">&nbsp;|&nbsp;</span></a>
+            <a href="#en" id="englishmob" style="text-decoration: none; margin-left: -12px; color: rgb(247, 167, 41);" onmouseover="this.style.color='white'" onmouseout="this.style.color='rgb(247, 167, 41)'">EN</a>
         </span>
     </nav>
 
@@ -97,64 +97,99 @@
     <!-- Cover Image -->
     <section class="cover-image" id="section1">
         <div class="coverimagediv">
-            <h1>Ticotrekker</h1>
+
+            <div>
+	            <h1><span id="spantitle" >Ticotrekker</span></h1>
+	            <p class="margin-top-negative">
+                    <span data-i18n="spandesk" id="spandesk">Te llevaremos a cualquier parte, a cualquier lugar</span>
+                    <span data-i18n="spanmobile" id="spanmobile">Te llevaremos a cualquier parte, a cualquier lugar</span>
+                </p>
+            </div>
+
             <!-- Cover image content goes here -->
-            <form action="" method="post" class="custom-form">
-                <input type="hidden" id="custom_form_nonce_field" name="custom_form_nonce_field" value="8c11d2e02f">
-                <input type="hidden" name="_wp_http_referer" value="/">
-                <div>
-                    <div class="form-row" id="firstrow">
-                        <div class="form-field">
-                            <label data-i18n="date" for="date">Seleccione una fecha</label>
-                            <input type="date" id="date" name="date" required>
-                        </div>
+        </div>
 
-                        <div class="form-field">
-                            <label data-i18n="pickup" for="pickup">Recoger en</label>
-                            <input type="text" id="pickup" name="pickup" required>
-                        </div>
+        <section class="tabs">
+            <div>
 
-                        <div class="form-field">
-                            <label data-i18n="dropoff" for="dropoff">Dejar en</label>
-                            <input type="text" id="dropoff" name="dropoff" required>
-                        </div>
-                    </div>
+               <div class="tab">
+                    <button data-i18n="form1" class="tablinks" onclick="openCity(event, 'Form1')">Traslado</button>
+                    <!--<button data-i18n="form2"  class="tablinks" onclick="openCity(event, 'Form2')">Traslado + Tour</button>-->
+               </div>
 
-                    <div class="form-row" id="secondrow">
-                        <div class="form-field">
-                            <label data-i18n="adults" for="adults">Adultos</label>
-                            <input type="number" id="adults" name="adults" min="1" required>
-                        </div>
+               <div id="Form1" class="tabcontent">
+                    
+                    <form action="" method="post" class="custom-form">
+                        <input type="hidden" id="custom_form_nonce_field" name="custom_form_nonce_field" value="8c11d2e02f">
+                        <input type="hidden" name="_wp_http_referer" value="/">
+                        <div id="divinnerform">
+                            <div class="form-row" id="firstrow">
 
-                        <div class="form-field">
-                            <label data-i18n="kids" for="children">Niños</label>
-                            <input type="number" id="children" name="children" min="0" required>
-                        </div>
+                                    <div class="form-field">
+                                        <label data-i18n="date" for="date">Seleccione una fecha</label>
+                                        <input type="date" id="date" name="date" required>
+                                    </div>
 
-                        <div class="toggle-container">
-                            <label data-i18n="roundtrip" for="roundTrip" class="toggle-label">¿Ida-Vuelta?</label>
-                            <div class="toggle-switch">
-                                <input type="checkbox" id="roundTrip" name="roundTrip" value="yes" required="">
-                                <label for="roundTrip" class="toggle-slider"></label>
+                                    <div class="form-field">
+                                        <label data-i18n="pickup" for="pickup">Recoger en</label>
+                                        <input type="text" id="pickup" name="pickup" required>
+                                    </div>
+
+                                    <div class="form-field">
+                                        <label data-i18n="dropoff" for="dropoff">Dejar en</label>
+                                        <input type="text" id="dropoff" name="dropoff" required>
+                                    </div>
+
+                            </div>
+
+                            <div class="form-row" id="secondrow">
+
+                                    <div class="form-field">
+                                        <label data-i18n="adults" for="adults">Adultos</label>
+                                        <input type="number" id="adults" name="adults" min="1" required>
+                                    </div>
+
+                                    <div class="form-field">
+                                        <label data-i18n="kids" for="children">Niños</label>
+                                        <input type="number" id="children" name="children" min="0" required>
+                                    </div>
+
+
+
+                                    <div class="form-field toggle-container">
+                                        <label data-i18n="roundtrip" for="roundTrip" class="toggle-label">¿Ida-Vuelta?</label>
+                                        <div class="toggle-switch">
+                                            <input type="checkbox" id="roundTrip" name="roundTrip" value="yes" required="">
+                                            <label for="roundTrip" class="toggle-slider" id="labelrt"></label>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-field">
+                                        <label data-i18n="contact" for="contact">Deje su contacto</label>
+                                        <input type="text" id="contact" name="contact">
+                                    </div>
+                                    <div class="form-field">
+                                        <button data-i18n="send" type="submit" id="buttonenviar" name="submit">Enviar</button>
+                                    </div>
+
                             </div>
                         </div>
+                    </form>
+               </div>
 
-                        <div class="form-field">
-                            <label data-i18n="contact" for="contact">Deje su contacto</label>
-                            <input type="text" id="contact" name="contact">
-                        </div>
+               <div id="Form2" class="tabcontent">
+               </div>
 
-                        <div class="form-row">
-                            <button data-i18n="send" type="submit" id="buttonenviar" name="submit">Enviar</button>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
+            </div>
+
+    
+        </section>
+
+
     </section>
 
-
-    <section class="text-presentation" id="section2">
+    
+    <section class="text-presentation" id="sobre-nosotros">
         <div>
             <div>
                 <p data-i18n="textpresentation" id="ptextp">
@@ -166,7 +201,7 @@
     </section>
 
     <!-- Section 1: Main Content -->
-    <section class="main-content" id="section3">
+    <section class="main-content" id="facilidades">
         <!-- Main content goes here -->
         <div class="containericons">
             <h3 data-i18n="ourservice" style="text-align: center;color: rgb(247,191,47);">Nuestro Servicio</h3>
@@ -266,7 +301,7 @@
     <section class="whatweare" id="section5">
         <div class="grid-container">
             <div class="grid-item-whatweare">
-                <video width="100%" src="https://media.w3.org/2010/05/sintel/trailer.mp4" autoplay="false" muted="false">
+                <video width="100%" src="./09/ticotrekker.mp4" autoplay="false" muted="false">
                     Tu navegador no admite el elemento <code>video</code>.
                 </video>
             </div>
@@ -294,7 +329,7 @@
     </section>
 
     <!-- Section 2: Gallery -->
-    <section id="section6">
+    <section id="galeria">
         <!-- Gallery content goes here -->
         <div class="gallery">
             <div class="gallery-item"><a href="./09/1.jpeg"><img src="./09/1.jpeg"></a></div>
@@ -340,7 +375,7 @@
     </section>
 
     <!-- Section 4: Contact -->
-    <section class="contact" id="section8">
+    <section class="contact" id="contacto">
         <div>
             <div>
                 <div></div>
@@ -424,7 +459,7 @@
 
     <div class="bottom-buttons">
         <i class="fa-solid fa-arrow-up scroll-top-button" onclick="scrollToTop()"></i>
-        <a class="whatsapp-button" href="https://wa.me/50683653876" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a class="whatsapp-button" href="https://wa.me/50683383002" target="_blank"><i class="fab fa-whatsapp"></i></a>
     </div>
 </body>
 
