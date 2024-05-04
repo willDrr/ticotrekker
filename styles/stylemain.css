@@ -120,6 +120,7 @@ h3 {
 
 .tabs {
     /*margin-top: -150px;*/
+    flex: 1;
     position: relative;
 }
 
